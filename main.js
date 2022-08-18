@@ -37,8 +37,8 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 const nav = document.querySelector('.nav__links');
-const openNavBtn = document.querySelector('#nav__toggle-open');
-const closeNavBtn = document.querySelector('#nav__toggle-close');
+const openNavBtn = document.getElementById('nav__toggle-open');
+const closeNavBtn = document.getElementById('nav__toggle-close');
 
 function openNav() {
     nav.style.display = 'flex';
@@ -46,7 +46,7 @@ function openNav() {
     closeNavBtn.style.display = 'inline-block';
 }
 
-openNavBtn.addEventListenner('click', openNav);
+//openNavBtn.addEventListenner('click', openNav);
 
 function closeNav() {
     nav.style.display = 'none';
@@ -54,7 +54,7 @@ function closeNav() {
     closeNavBtn.style.display = 'none';
 }
 
-closeNavBtn.addEventListenner('click', closeNav);
+//closeNavBtn.addEventListenner('click', closeNav);
 
 nav.querySelectorAll('li a').forEach(navLink => {
     navLink.addEventListener('click', closeNav);

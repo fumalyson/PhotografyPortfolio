@@ -95,7 +95,7 @@ img {
 
 nav {
     height: 5rem;
-    width: 100vw;
+    width: 100%;
     display: grid;
     place-items: center;
     position: fixed;
@@ -455,8 +455,8 @@ header {
     filter: saturate(1);
 }
 
-.swiper-pagination.bullet {
-    background: var(--color-primary);
+.swiper-pagination-bullet {
+    background-color: var(--color-primary) !important;
 }
 
 /* ====================== EXHIBITIONS ================== */
@@ -571,6 +571,18 @@ footer {
     display: flex;
     align-items: center;
     gap: 5rem;
+}
+
+/* ============ HIDDEN NAV BTN ON BIG SCREENS 1025px+ =========== */
+
+@media screen and (min-width: 1025px) {
+    .nav__toggle-btn {
+        display: none !important;
+    }
+    .nav__links {
+        display: flex !important;
+    }
+    
 }
 
 /* ============== MEDIA QUERIES (MEDIUM SCREENS) ============== */
