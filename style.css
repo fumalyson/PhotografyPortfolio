@@ -904,6 +904,10 @@ footer {
 
     /* ============== FOOTER ============== */
 
+    footer {
+        width: 100vw;
+    }
+
     .footer__head {
         flex-direction: column;
     }
